@@ -20,7 +20,6 @@ const clearFields = (inputsSelector, tabsSelector, contentSelectorForTabs, activ
     });
     tabs[startedNumberOfTab].classList.add(activeClassTab);
     content[startedNumberOfTab].style.display = display;
-    tabs[startedNumberOfTab].classList.add(activeClassTab);
 
 };
 

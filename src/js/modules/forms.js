@@ -55,6 +55,8 @@ const forms = (state) => {
                     autoCloseModal('[data-modal]');
                     for (let key in state) {
                         delete state[key];
+                        state.form = 0;
+                        state.type = 'tree';
                     }
                 });
         });
