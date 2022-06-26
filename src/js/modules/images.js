@@ -9,9 +9,9 @@ const images = () => {
     imgPopup.style.justifyContent = 'center';
     imgPopup.style.alignItems = 'center';
     imgPopup.style.display = 'none';
-    bigImg.style.width = '40vw';
+    bigImg.style.width = '30vw';
     bigImg.style.height = '70vh';
-    bigImg.style.objectFit = 'contain';
+    bigImg.style.objectFit = 'cover';
 
     imgPopup.appendChild(bigImg);
 

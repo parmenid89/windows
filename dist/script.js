@@ -18184,9 +18184,9 @@ var images = function images() {
   imgPopup.style.justifyContent = 'center';
   imgPopup.style.alignItems = 'center';
   imgPopup.style.display = 'none';
-  bigImg.style.width = '40vw';
+  bigImg.style.width = '30vw';
   bigImg.style.height = '70vh';
-  bigImg.style.objectFit = 'contain';
+  bigImg.style.objectFit = 'cover';
   imgPopup.appendChild(bigImg);
   workSection.addEventListener('click', function (e) {
     e.preventDefault();
@@ -18293,7 +18293,18 @@ var modals = function modals(state) {
   function showModal(modalWindow) {
     modalWindow.style.display = 'block';
     document.body.style.overflow = 'hidden';
-  }
+  } // function calcScroll() {         /* Функция для расчета ширины скролла */
+  //     let div = document.createElement('div');
+  //     div.style.width = '50px';
+  //     div.style.height = '50px';
+  //     div.style.overflowY = 'scroll';
+  //     div.style.visibility = 'hidden';
+  //     document.body.appendChild(div);
+  //     let scrollWidth = div.offsetWidth - div.clientWidth;
+  //     div.remove();
+  //     return scrollWidth;
+  // }
+
 
   bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
   bindModal('.phone_link', '.popup', '.popup .popup_close');
